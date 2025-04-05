@@ -16,6 +16,8 @@ int main()
   std::cout<<"\n Con apuntador Estudiante y objeto Estudiante muestra \n";
   ptrEst->muestraDatos();
 
+  delete ptrPers; //Liberamos la memoria asignada anteriormente al objeto Persona 
+
   //OJO se inicializa apuntador a Persona con objeto Estudiante
   ptrPers = new Estudiante{"Renato", 19, "ITC"};
   std::cout<<"\n Con apuntador Persona y objeto Estudiante muestra \n";
